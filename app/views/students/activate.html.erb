@@ -1,0 +1,9 @@
+# <% if @student.active == true %>
+# <%  @student.update(:active => false)%>
+# <% elsif @student.active == false%>
+# <%   @student.update(:active => true)%>
+# <%  end%>
+
+# <div><%= link_to @student.to_s, student_path(@student) %></div>
+
+# <%= @student.active %>
